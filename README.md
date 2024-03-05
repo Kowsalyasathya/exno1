@@ -149,5 +149,5 @@ z
 
 ![309301639-29ca2a73-2b45-4de4-a538-0795024c5d55](https://github.com/Kowsalyasathya/exno1/assets/118671457/9bf8eff7-dec5-4736-b4ef-03f10fc6064f)
 
-# Result:
-     Thus the outliers are detected and removed in the given file and the final data set is saved into the file.       
+## Result:
+Thus the outliers are detected and removed in the given file and the final data set is saved into the file.
