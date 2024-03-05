@@ -104,38 +104,49 @@ import scipy.stats as stats
 dataset=pd.read_csv("/content/heights.csv")
 dataset
 ```
+
 ![309301483-85a422ca-4fac-4db4-a32d-4a1508d736b8](https://github.com/Kowsalyasathya/exno1/assets/118671457/63b287a2-5528-4fae-a166-8d7fc7be13ba)
+
 ```
 df = pd.read_csv("heights.csv")
 q1 = df['height'].quantile(0.25)
 q2 = df['height'].quantile(0.5)
 q3 = df['height'].quantile(0.75)
 ```
+
 ```
 iqr = q3-q1
 iqr
 ```
+
 ![309301503-264e6e9e-2f8b-47df-a3e8-33db992a783d](https://github.com/Kowsalyasathya/exno1/assets/118671457/850b3546-0082-4905-a4da-2c6266e829b0)
 
 ```
 low = q1 - 1.5*iqr
 low
 ```
+
 ![309301554-a80f4578-fc2b-4ca0-a524-6a05b12b8539](https://github.com/Kowsalyasathya/exno1/assets/118671457/bcc395a5-44a9-4a9a-a9cd-9ac65d008d49)
+
 ```
 high = q3 + 1.5*iqr
 high
 ```
+
 ![309301584-1a56212e-cc6f-40e8-80e0-2d918b356919](https://github.com/Kowsalyasathya/exno1/assets/118671457/b5eb3cbc-84b9-48d7-b07f-637afc3c616f)
+
 ```
 df1 = df[((df['height'] >=low)& (df['height'] <=high))]
 df1
+
 ```
 ![309301615-7610c576-d3f6-4955-99b6-c0ec48183986](https://github.com/Kowsalyasathya/exno1/assets/118671457/b9b1a265-7f90-4a0d-a2ec-3f5be2609f87)
+
 ```
 z = np.abs(stats.zscore(df['height']))
 z
 ```
+
 ![309301639-29ca2a73-2b45-4de4-a538-0795024c5d55](https://github.com/Kowsalyasathya/exno1/assets/118671457/9bf8eff7-dec5-4736-b4ef-03f10fc6064f)
 
 # Result:
